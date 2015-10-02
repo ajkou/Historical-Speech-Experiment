@@ -1,0 +1,159 @@
+<html>
+
+ <style type='text/css'>
+ img{
+ 	width: 75px; 
+    height: 100px;
+ }
+ .right {
+    position: absolute;
+    right: 50px;
+    top: 250px;
+    height: 350px;
+    width: 300px;
+}
+ .box{
+    position: absolute;
+    top: 300px;
+    right: 380px;
+    height: 50px;
+    width: 10px;
+    color: black;
+    font-size: 300%;
+    background-color: blue;
+}
+ </style>
+<body>
+<div id="gallery">
+    <img src="199px-Edward_Snowden-2.jpg" height="100" width="100" id="snowden" onclick="doThis('Snowden')"/>
+    <img src="129958-004-C9B8B89D.jpg" height="100" width="100" id="hitler" onclick="doThis('Hitler')"/>
+    <img src="837022b3d9ba8c0664db08d3ab4f16e15a73a683.jpg" height="100" width="100" id="julius" onclick="doThis('Julius')"/>
+    <img src="1376580_10151878817796749_162570700_n.png" height="100" width="100" id="obama" onclick="doThis('Obama')"/>
+    <img src="GpBVNIqsRiS3WwMNhzSX_Joseph_Stalin.jpg" height="100" width="100" id="stalin" onclick="doThis('Stalin')"/>
+    <img src="images.jpg" height="100" width="100" id="franklin" onclick="doThis('Franklin')"/>
+    <img src="MTE5NDg0MDU1MDYwMjUyMTc1.jpg" height="100" width="100" id="mao" onclick="doThis('Mao')"/>
+    <img src="MTE5NDg0MDU1MTUyNzIzNDcx.jpg" height="100" width="100" id="trump" onclick="doThis('Trump')"/>
+    <img src="MTE5NTU2MzE2MzMwMjk2ODQz.jpg" height="100" width="100" id="florence" onclick="doThis('Florence')"/>
+    <img src="MTIwNjA4NjMzMjIxNzExMzcy.jpg" height="100" width="100" id="napoleon" onclick="doThis('Napoleon')"/>
+    <img src="Portrait_Gandhi.jpg" height="100" width="100" id="gandhi" onclick="doThis('Gandhi')"/>
+    <img src="v3-turing-rx.jpg" height="100" width="100" id="turing" onclick="doThis('Turing')"/>
+    <img src="Margaret_Thatcher.png" height="100" width="100" id="thatcher" onclick="doThis('Thatcher')"/>
+    <img src="Evita_color.jpg" height="100" width="100" id="eva" onclick="doThis('Eva')"/>
+    <img src="MTE5NTU2MzE2MjgwNDg5NDgz.jpg" height="100" width="100" id="mlk" onclick="doThis('MLK')"/>
+    <img src="tumblr_n2c2b0Ukks1s80x5do1_1280.jpg" height="100" width="100" id="ghandalf" onclick="doThis('Ghandalf')"/>
+    <img src="73273_773684942011_4_40639956_2125564_n.jpg" height="100" width="100" id="mark" onclick="doThis('Mark')"/>
+    <img src="MTE4MDAzNDEwNjIzNjk0MzUw.jpg" height="100" width="100" id="golda" onclick="doThis('Golda')"/>
+    <img src="JJjvJtb3.jpeg" height="100" width="100" id="manson" onclick="doThis('Manson')"/>
+
+</div>
+<div id="Div1">
+    <div id="Div2" class="box">
+    </div>
+    <div id="Div3" class="box">
+    </div>
+
+    <div id="Div4" class="box">
+    </div>
+    <div id="Div5" class="box">
+    </div>
+    <div id="Div6" class="box">
+    </div>
+</div>
+<div id="msgid">
+</div>
+
+</body>
+
+
+<script type="text/javascript" src="jquery-1.11.3.js"></script>
+<script type="text/javascript">
+    
+    $('#Div3').css("top", "360");
+    $('#Div3').css("background-color", "CornflowerBlue");
+    $('#Div4').css("top", "420");
+    $('#Div4').css("background-color", "Grey");
+    $('#Div5').css("top", "480");
+    $('#Div5').css("background-color", "FireBrick");
+    $('#Div6').css("top", "540");
+    $('#Div6').css("background-color", "red");
+    
+    EvaArray=['Eva', 'negative', '-0.4335214017661685', -0.8999033647731193, -0.683452683096368, -0.7176687736973063, -0.7176687736973063, 0.8510865864332573]
+    FlorenceArray=['Florence', 'negative', '-0.1969355833803762', -0.7176687736973063, -0.7242245628770796, 0.8510865864332573]
+    FranklinArray=['Franklin', 'neutral', '-0.05443028726642877', -0.6280145725181376, -0.8109596801708514, -0.5685799620527161, -0.6700310482815184, -0.3514962695555117, 0.8053406931054015, 0.8053406931054015, 0.7570003110696172, 0.17152724990045615]
+    GandhiArray=['Gandhi', 'positive', '0.17282336602144305', -0.5274215517597863, -0.7176687736973063, -0.07100849893290435, 0.42279137987234977, 0.7570003110696172, 0.6745392194237302, 0.21634026967770648, 0.6280145725181376]
+    GhandalfArray=['Ghandalf', 'neutral', '-0.08006728452644286', -0.7176687736973063, -0.42279137987234977, -0.5377930826218214, 0.5685799620527161, 0.709336851506547]
+    GoldaArray=['Golda', 'neutral', '-0.01799774687622413', -0.683452683096368, -0.9025871577819432, -0.683452683096368, 0.7176687736973063, 0.8510865864332573, 0.5927506825867709]
+    HitlerArray=['Hitler', 'positive', '0.1912709086895233', -0.709336851506547, -0.6887336106458627, 0.7176687736973063, 0.709336851506547, 0.9274193803961728]
+    JuliusArray=['Julius', 'positive', '0.2997651796273263', -0.6280145725181376, -0.8248257350670388, -0.39388090966436723, 0.7176687736973063, 0.7176687736973063, 0.7176687736973063, 0.7176687736973063, 0.7176687736973063, 0.6280145725181376, 0.6280145725181376]
+    MaoArray=['Mao', 'negative', '-0.18038281620316723', -0.5685799620527161, -0.8236550729900429, 0.8510865864332573]
+    MarkArray=['Mark', 'positive', '0.12323372229896663', -0.44365059175771526, -0.8792044326992317, 0.4065193645410991, 0.7176687736973063, 0.3694892579596252, 0.5685799620527161]
+    MLKArray=['MLK', 'neutral', '0.05550193678568169', -0.683452683096368, -0.5889154769072048, -0.8510865864332573, 0.5685799620527161, 0.5685799620527161, 0.5685799620527161, 0.17152724990045615, 0.6902031046636792]
+    NapoleonArray=['Napoleon', 'neutral', '0.07527398376098686', -0.40209773927084985, -0.5274215517597863, -0.5274215517597863, 0.6241628825269399, 0.5274215517597863, 0.7570003110696172]
+    ObamaArray=['Obama', 'positive', '0.3175082070254253', -0.6280145725181376, -0.6280145725181376, 0.5685799620527161, 0.7176687736973063, 0.7176687736973063, 0.7176687736973063, 0.7570003110696172]
+    SnowdenArray=['Snowden', 'neutral', '0']
+    StalinArray=['Stalin', 'negative', '-0.3594353614007847', -0.5274215517597863, -0.7923352042939829, -0.46377052838785104, -0.7923352042939829, 0.7786856817316798]
+    ThatcherArray=['Thatcher', 'positive', '0.4244926496075812', -0.709336851506547, 0.6745392194237302, 0.44365059175771526, 0.8053406931054015, 0.8053406931054015, 0.5274215517597863]
+    TrumpArray=['Trump', 'positive', '0.3744141894372076', -0.44365059175771526, -0.7176687736973063, -0.5040511962893521, 0.7570003110696172, 0.6939632083408412, 0.6745392194237302, 0.7176687736973063, 0.7614534295773973, 0.8510865864332573, 0.7176687736973063, 0.6105463433142023]
+    TuringArray=['Turing', 'negative', '-0.284434128917201', -0.041446706074615654, -0.5274215517597863]
+    MansonArray=['Manson', 'positive', '0.13784655310157892', -0.8813259494574204, -0.44365059175771526, -0.44365059175771526, -0.3694892579596252, -0.7176687736973063, -0.6280145725181376, 0.8053406931054015, 0.8053406931054015, 0.47384672375273046, 0.9025871577819432, 0.7176687736973063, 0.7923352042939829, 0.7786856817316798]
+   
+    //set distribution bars
+    function setBars(subject) {
+        myScores = eval(subject + "Array");
+        countNeg1 = 0;
+        countNeg2 = 0;
+        countPos1 = 0;
+        countPos2 = 0;
+        countNeu = 0;
+        for (index = 3; index < myScores.length; ++index) {
+            if (myScores[index] > -0.2 & myScores[index] < 0.2){countNeu = countNeu+1;}
+            else if (myScores[index] < -0.6) {countNeg2 = countNeg2+1;}
+            else if (myScores[index] < 0) {countNeg1 = countNeg1+1;}
+            else if (myScores[index] < 0.6) {countPos1 = countPos1+1;}
+            else {countPos2 = countPos2+1;}
+        }
+        $('#Div2').animate({width:countPos2*25}, 1000);
+        $('#Div3').animate({width:countPos1*25}, 1000);
+        $('#Div4').animate({width:countNeu*25}, 1000);
+        $('#Div5').animate({width:countNeg1*25}, 1000);
+        $('#Div6').animate({width:countNeg2*25}, 1000);
+        $('#Div2').html(countPos2);
+        $('#Div3').html(countPos1);   
+        $('#Div4').html(countNeu);
+        $('#Div5').html(countNeg1); 
+        $('#Div6').html(countNeg2); 
+    }
+
+    //set picture, title, and main text
+    function doThis(sender){
+        if (sender == "Eva") {$('#msgid').html("<font size=6>{'score': -0.4335214017661685, 'sentiment': 'negative'} Eva Peron</font><p>"+"I know that, like every woman of the people, I have more strength than I appear to have.<p>" + "Keeping books on social aid is capitalistic nonsense. I just use the money for the poor. I can't stop to count it.<p>" + "Time is my greatest enemy.<p>" + "My biggest fear in life is to be forgotten.<p>" + "When the rich think about the poor, they have poor ideas.<p>" + "One cannot accomplish anything without fanatacism.<p>" + "Charity separates the rich from the poor; aid raises the needy and sets him on the same level with the rich.")}
+        if (sender == "Florence") {$('#msgid').html("<font size=6>{'score': -0.1969355833803762, 'sentiment': 'negative'} Florence Nightingale</font><p>"+"I attribute my success to this - I never gave or took any excuse.<p>" + "Were there none who were discontented with what they have, the world would never reach anything better.<p>" + "The very first requirement in a hospital is that it should do the sick no harm.<p>" + "Women have no sympathy and my experience of women is almost as large as Europe.<p>" + "It may seem a strange principle to enunciate as the very first requirement in a hospital that it should do the sick no harm.")}
+        if (sender == "Franklin") {$('#msgid').html("<font size=6>{'score': -0.05443028726642877, 'sentiment': 'neutral'} Benjamin Franklin</font><p>"+"If time be of all things the most precious, wasting time must be the greatest prodigality.<p>" + "Tell me and I forget, teach me and I may remember, involve me and I learn.<p>" + "By failing to prepare, you are preparing to fail.<p>" + "There never was a good war or a bad peace.<p>" + "We are all born ignorant, but one must work hard to remain stupid.<p>" + "Wine is constant proof that God loves us and loves to see us happy.<p>" + "He that is good for making excuses is seldom good for anything else.<p>" + "Without continual growth and progress, such words as improvement, achievement, and success have no meaning.<p>" + "Never leave that till tomorrow which you can do today.<p>" + "Any fool can criticize, condemn and complain and most fools do.")}
+        if (sender == "Gandhi") {$('#msgid').html("<font size=6>{'score': 0.17282336602144305, 'sentiment': 'positive'} Mahatma Gandhi</font><p>"+"The weak can never forgive. Forgiveness is the attribute of the strong.<p>" + "Live as if you were to die tomorrow; learn as if you were to live forever.<p>" + "Happiness is when what you think, what you say, and what you do are in harmony.<p>" + "An eye for eye only ends up making the whole world blind.<p>" + "Nobody can hurt me without my permission.<p>" + "The best way to find yourself is to lose yourself in the service of others.<p>" + "A man is but the product of his thoughts; what he thinks, he becomes.<p>" + "First they ignore you, then they laugh at you, then they fight you, then you win.<p>" + "Strength does not come from physical capacity. It comes from an indomitable will.<p>" + "You must not lose faith in humanity. Humanity is an ocean; if a few drops of the ocean are dirty, the ocean does not become dirty.")}
+        if (sender == "Ghandalf") {$('#msgid').html("<font size=6>{'score': -0.08006728452644286, 'sentiment': 'neutral'} Gandalf Greybeard</font><p>"+"Yes, yes my dear sir and I do know your name Mr. Bilbo Baggins. And you do know my name, though you don't remember that I belong to it. I am Gandalf, and Gandalf means me. <p>" + "All we have to decide is what to do with the time that is given us. <p>" + "I will not say, do not weep, for not all tears are an evil. <p>" + "He that breaks a thing to find out what it is has left the path of wisdom. <p>" + "Many that live deserve death. And some that die deserve life. Can you give it to them? Then do not be too eager to deal out death in judgement. <p>" + "It is not despair, for despair is only for those who see the end beyond all doubt. We do not.<p>" + "")}
+        if (sender == "Golda") {$('#msgid').html("<font size=6>{'score': -0.01799774687622413, 'sentiment': 'neutral'} Golda Meir</font><p>"+"Those who don't know how to weep with their whole heart, don't know how to laugh either.<p>" + "One cannot and must not try to erase the past merely because it does not fit the present.<p>" + "A leader who doesn't hesitate before he sends his nation into battle is not fit to be a leader.<p>" + "To be or not to be is not a question of compromise. Either you be or you don't be.<p>" + "Pessimism is a luxury that a Jew can never allow himself.<p>" + "Fashion is an imposition, a reign on freedom.<p>" + "We do not rejoice in victories. We rejoice when a new kind of cotton is grown and when strawberries bloom in Israel.<p>" + "I must govern the clock, not be governed by it.<p>" + "Above all, this country is our own. Nobody has to get up in the morning and worry what his neighbors think of him. Being a Jew is no problem here.<p>" + "We Jews have a secret weapon in our struggle with the Arabs; we have no place to go.")}
+        if (sender == "Hitler") {$('#msgid').html("<font size=6>{'score': 0.1912709086895233, 'sentiment': 'positive'} Aldolf Hitler</font><p>"+"He alone, who owns the youth, gains the future.<p>" + "Make the lie big, make it simple, keep saying it, and eventually they will believe it.<p>" + "The victor will never be asked if he told the truth.<p>" + "I do not see why man should not be just as cruel as nature.<p>" + "Demoralize the enemy from within by surprise, terror, sabotage, assassination. This is the war of the future.<p>" + "All propaganda has to be popular and has to accommodate itself to the comprehension of the least intelligent of those whom it seeks to reach.<p>" + "Great liars are also great magicians.<p>" + "It is not truth that matters, but victory.<p>" + "Those who want to live, let them fight, and those who do not want to fight in this world of eternal struggle do not deserve to live.<p>" + "I use emotion for the many and reserve reason for the few.")}
+        if (sender == "Julius") {$('#msgid').html("<font size=6>{'score': 0.2997651796273263, 'sentiment': 'positive'} Gaius Julius Caesar</font><p>"+"It is easier to find men who will volunteer to die, than to find those who are willing to endure pain with patience.<p>" + "It is better to create than to learn! Creating is the essence of life.<p>" + "Men willingly believe what they wish.<p>" + "What we wish, we readily believe, and what we ourselves think, we imagine others think also.<p>" + "If you must break the law, do it to seize power: in all other cases observe it.<p>" + "Men in general are quick to believe that which they wish to be true.<p>" + "As a rule, men worry more about what they can't see than about what they can.<p>" + "In war, events of importance are the result of trivial causes.<p>" + "Which death is preferably to every other? 'The unexpected'.<p>" + "Experience is the teacher of all things.")}
+        if (sender == "Mao") {$('#msgid').html("<font size=6>{'score': -0.18038281620316723, 'sentiment': 'negative'} Mao Zedong</font><p>"+"All reactionaries are paper tigers.<p>" + "Political power grows out of the barrel of a gun.<p>" + "Politics is war without bloodshed while war is politics with bloodshed.<p>" + "Let a hundred flowers bloom, let a hundred schools of thought contend.<p>" + "War can only be abolished through war, and in order to get rid of the gun it is necessary to take up the gun.<p>" + "Classes struggle, some classes triumph, others are eliminated. Such is history; such is the history of civilization for thousands of years.<p>" + "The people, and the people alone, are the motive force in the making of world history.<p>" + "Communism is not love. Communism is a hammer which we use to crush the enemy.<p>" + "To read too many books is harmful.<p>" + "In waking a tiger, use a long stick.")}
+        if (sender == "Mark") {$('#msgid').html("<font size=6>{'score': 0.12323372229896663, 'sentiment': 'positive'} Mark Zuckerberg</font><p>"+"The biggest risk is not taking any risk... In a world that changing really quickly, the only strategy that is guaranteed to fail is not taking risks.<p>" + "Think about what people are doing on Facebook today. They're keeping up with their friends and family, but they're also building an image and identity for themselves, which in a sense is their brand. They're connecting with the audience that they want to connect to. It's almost a disadvantage if you're not on it now.<p>" + "Move fast and break things. Unless you are breaking stuff, you are not moving fast enough.<p>" + "When you give everyone a voice and give people power, the system usually ends up in a really good place. So, what we view our role as, is giving people that power.<p>" + "I look at Google and think they have a strong academic culture. Elegant solutions to complex problems.<p>" + "By giving people the power to share, we're making the world more transparent.<p>" + "On engagement, we're already seeing that mobile users are more likely to be daily active users than desktop users. They're more likely to use Facebook six or seven days of the week.<p>" + "")}
+        if (sender == "MLK") {$('#msgid').html("<font size=6>{'score': 0.05550193678568169, 'sentiment': 'neutral'} Martin Luther King Jr</font><p>"+"The ultimate measure of a man is not where he stands in moments of comfort and convenience, but where he stands at times of challenge and controversy.<p>" + "Faith is taking the first step even when you don't see the whole staircase.<p>" + "Injustice anywhere is a threat to justice everywhere.<p>" + "Life's most persistent and urgent question is, 'What are you doing for others?<p>" + "Our lives begin to end the day we become silent about things that matter.<p>" + "In the end, we will remember not the words of our enemies, but the silence of our friends.<p>" + "I have decided to stick with love. Hate is too great a burden to bear.<p>" + "Nothing in all the world is more dangerous than sincere ignorance and conscientious stupidity.<p>" + "We must accept finite disappointment, but never lose infinite hope.<p>" + "Love is the only force capable of transforming an enemy into friend.")}
+        if (sender == "Napoleon") {$('#msgid').html("<font size=6>{'score': 0.07527398376098686, 'sentiment': 'neutral'} Napoleon Bonaparte</font><p>"+"Never interrupt your enemy when he is making a mistake.<p>" + "Take time to deliberate, but when the time for action has arrived, stop thinking and go in.<p>" + "A leader is a dealer in hope.<p>" + "He who fears being conquered is sure of defeat.<p>" + "Religion is what keeps the poor from murdering the rich.<p>" + "Death is nothing, but to live defeated and inglorious is to die daily.<p>" + "History is a set of lies agreed upon.<p>" + "Victory belongs to the most persevering.<p>" + "There are only two forces in the world, the sword and the spirit. In the long run the sword will always be conquered by the spirit.<p>" + "The best way to keep one's word is not to give it.")}
+        if (sender == "Obama") {$('#msgid').html("<font size=6>{'score': 0.3175082070254253, 'sentiment': 'positive'} Barack Obama</font><p>"+"If you're walking down the right path and you're willing to keep walking, eventually you'll make progress.<p>" + "Change will not come if we wait for some other person or some other time. We are the ones we've been waiting for. We are the change that we seek.<p>" + "In the end, that's what this election is about. Do we participate in a politics of cynicism or a politics of hope?<p>" + "Why can't I just eat my waffle?<p>" + "If the people cannot trust their government to do the job for which it exists - to protect them and to promote their common welfare - all else is lost.<p>" + "We've been warned against offering the people of this nation false hope. But in the unlikely story that is America, there has never been anything false about hope.<p>" + "I think when you spread the wealth around it's good for everybody.<p>" + "The future rewards those who press on. I don't have time to feel sorry for myself. I don't have time to complain. I'm going to press on.<p>" + "There's not a liberal America and a conservative America - there's the United States of America.<p>" + "Money is not the only answer, but it makes a difference.")}
+        if (sender == "Snowden") {$('#msgid').html("<font size=6>{'score': 0, 'sentiment': 'neutral'} Edward Snowden</font><p>"+"I have no intention of hiding who I am because I know I have done nothing wrong.<p>" + "If an NSA, FBI, CIA, DIA, etc analyst has access to query raw SIGINT databases, they can enter and get results for anything they want. Phone number, email, user id, cell phone handset id (IMEI), and so on - it's all the same.<p>" + "Citizens with a conscience are not going to ignore wrong-doing simply because they'll be destroyed for it: the conscience forbids it.<p>" + "Suspicionless surveillance does not become okay simply because it's only victimizing 95% of the world instead of 100%.<p>" + "Bathtub falls and police officers kill more Americans than terrorism, yet we've been asked to sacrifice our most sacred rights for fear of falling victim to it.<p>" + "The NSA has built an infrastructure that allows it to intercept almost everything. With this capability, the vast majority of human communications are automatically ingested without targeting. If I wanted to see your emails or your wife's phone, all I have to do is use intercepts. I can get your emails, passwords, phone records, credit cards.<p>" + "Even if you're not doing anything wrong, you are being watched and recorded.<p>" + "I do not want to live in a world where everything I do and say is recorded. That is not something I am willing to support or live under.<p>" + "After 9/11, many of the most important news outlets in America abdicated their role as a check to power - the journalistic responsibility to challenge the excesses of government - for fear of being seen as unpatriotic and punished in the market during a period of heightened nationalism.<p>" + "Ask yourself: if I were a Chinese spy, why wouldn't I have flown directly into Beijing? I could be living in a palace petting a phoenix by now.<p>" + "I wanted to fight in the Iraq war because I felt like I had an obligation as a human being to help free people from oppression.<p>" + "")}
+        if (sender == "Stalin") {$('#msgid').html("<font size=6>{'score': -0.3594353614007847, 'sentiment': 'negative'} Joseph Stalin</font><p>"+"It is enough that the people know there was an election. The people who cast the votes decide nothing. The people who count the votes decide everything.<p>" + "Ideas are more powerful than guns. We would not let our enemies have guns, why should we let them have ideas.<p>" + "Death is the solution to all problems. No man - no problem.<p>" + "Education is a weapon, whose effect depends on who holds it in his hands and at whom it is aimed.<p>" + "The Pope! How many divisions has _he_ got ?<p>" + "Gratitude is a sickness suffered by dogs.<p>" + "History shows that there are no invincible armies.<p>" + "In the Soviet army it takes more courage to retreat than advance.<p>" + "The death of one man is a tragedy. The death of millions is a statistic.<p>" + "I believe in one thing only, the power of the human will.")}
+        if (sender == "Thatcher") {$('#msgid').html("<font size=6>{'score': 0.4244926496075812, 'sentiment': 'positive'} Margaret Thatcher</font><p>"+"If you want something said, ask a man; if you want something done, ask a woman.<p>" + "Being powerful is like being a lady. If you have to tell people you are, you aren't.<p>" + "You may have to fight a battle more than once to win it.<p>" + "If you set out to be liked, you would be prepared to compromise on anything at any time, and you would achieve nothing.<p>" + "There is no such thing as society: there are individual men and women, and there are families.<p>" + "I do not know anyone who has got to the top without hard work. That is the recipe. It will not always get you to the top, but should get you pretty near.<p>" + "Any woman who understands the problems of running a home will be nearer to understanding the problems of running a country.<p>" + "Europe was created by history. America was created by philosophy.<p>" + "I've got a woman's ability to stick to a job and get on with it when everyone else walks off and leaves it.<p>" + "I love argument, I love debate. I don't expect anyone just to sit there and agree with me, that's not their job.")}
+        if (sender == "Trump") {$('#msgid').html("<font size=6>{'score': 0.3744141894372076, 'sentiment': 'positive'} Donald Trump</font><p>"+"Sometimes your best investments are the ones you don't make.<p>" + "I try to learn from the past, but I plan for the future by focusing exclusively on the present. That's were the fun is.<p>" + "Money was never a big motivation for me, except as a way to keep score. The real excitement is playing the game.<p>" + "Sometimes by losing a battle you find a new way to win the war.<p>" + "What separates the winners from the losers is how a person reacts to each new twist of fate.<p>" + "Everything in life is luck.<p>" + "As long as your going to be thinking anyway, think big.<p>" + "Part of being a winner is knowing when enough is enough. Sometimes you have to give up the fight and walk away, and move on to something that's more productive.<p>" + "In the end, you're measured not by how much you undertake but by what you finally accomplish.<p>" + "I wasn't satisfied just to earn a good living. I was looking to make a statement.")}
+        if (sender == "Turing") {$('#msgid').html("<font size=6>{'score': -0.284434128917201, 'sentiment': 'negative'} Alan Turing</font><p>"+"We can only see a short distance ahead, but we can see plenty there that needs to be done.<p>" + "Science is a differential equation. Religion is a boundary condition.<p>" + "Machines take me by surprise with great frequency.<p>" + "Mathematical reasoning may be regarded...<p>" + "A computer would deserve to be called intelligent if it could deceive a human into believing that it was human.<p>" + "We are not interested in the fact that the brain has the consistency of cold porridge.")}    
+        if (sender == "Manson") {$('#msgid').html("<font size=6>{'score': 0.13784655310157892, 'sentiment': 'positive'} Marilyn Manson</font><p>"+"When you're taught to love everyone, to love your enemies, then what value does that place on love?<p>" + "When all of your wishes are granted, many of your dreams will be destroyed.<p>" + "Part of me is afraid to get close to people because I'm afraid that they're going to leave.<p>" + "We live in a society of victimization, where people are much more comfortable being victimized than actually standing up for themselves.<p>" + "I never said to be like me, I say to be like you and make a difference.<p>" + "Is adult entertainment killing our children? or is killing our children entertaining our adults?<p>" + "Music is the strongest form of magic.<p>" + "A lot of people don't want to make their own decisions. They're too scared. It's much easier to be told what to do.<p>" + "Times have not become more violent. They have just become more televised.<p>" + "This is the culture you're raising your kids in. Don't be surprised if it blows up in your face.<p>" + "")}
+        //set main picture to a right and a larger size
+        var returnImg = $('#Div1').children();
+        returnImg.removeClass("right");
+        $('#gallery').append(returnImg);
+        var frontImg = $('#' + sender.toLowerCase())
+        frontImg.toggleClass("right");
+        $('#Div1').append(frontImg);
+        setBars(sender);       
+    }
+
+</script>
+</html>
